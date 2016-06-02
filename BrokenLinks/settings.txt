@@ -1,0 +1,16 @@
+chrome.experimental.* API
+API 列表
+名称	描述
+注意：不要依赖这些实验性 API，它们可能随时消失，并且可能随时更改。同时，Chrome 开发者信息中心也不允许您上传使用实验性 API 的扩展程序。
+
+如何使用实验性 API
+如下所示在您的清单文件中指定 "experimental" 权限。
+"permissions": [
+  "experimental",
+  ...
+],
+
+在您的浏览器中启用实验性 API，您可以通过一下任意一种方式进行：
+进入 chrome://flags，找到“实验性扩展程序 API”，单击“启用”链接，然后重启 Chrome 浏览器。从现在开始，除非您回到刚才的页面并禁用实验性 API，您将能够运行使用实验性 API 的扩展程序。
+在您执行浏览器时指定 --enable-experimental-extension-apis 标志。在 Windows 中，您可以通过修改您用来启动 Google Chrome 浏览器的快捷方式的属性来做到这一点。例如：
+path_to_chrome.exe --enable-experimental-extension-apis
